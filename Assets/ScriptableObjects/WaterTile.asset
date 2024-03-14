@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93fb8339808b304468db04446ad0bc51, type: 3}
+  m_Name: WaterTile
+  m_EditorClassIdentifier: 
+  tiles:
+  - {fileID: 11400000, guid: 4e27ef9f8fa56e24d92c448f8182fc25, type: 2}
+  - {fileID: 11400000, guid: 5a7837f133610a24185dd054df20b175, type: 2}
+  - {fileID: 11400000, guid: 1fc0ce8ba8a23444d9591892047da302, type: 2}
+  - {fileID: 11400000, guid: 425c91bb33e86bb4bb953d8602f240e5, type: 2}
+  - {fileID: 11400000, guid: 3675897a74c493445bac47f19e89b6dc, type: 2}
+  - {fileID: 11400000, guid: 484d39414051f254789d0161a038e587, type: 2}
+  - {fileID: 11400000, guid: d3bf76d4d0416b44b98a829685d7c53d, type: 2}
+  - {fileID: 11400000, guid: 567aa83cab3aaed4898583e69c5760aa, type: 2}
+  - {fileID: 11400000, guid: 9f4a4c314588c014683411538db708f0, type: 2}
+  - {fileID: 11400000, guid: 4d461abadd0aa6549b81a62a96034e84, type: 2}
+  - {fileID: 11400000, guid: ed8ce009d7755974cbe9aac7509a3536, type: 2}
+  - {fileID: 11400000, guid: 46e73063b923d65488046df753ac33d4, type: 2}
+  - {fileID: 11400000, guid: 7d07655c67b9b18488ee500d3b3e5550, type: 2}
+  - {fileID: 11400000, guid: ef958ddea2e0be246bfda33933b37ed1, type: 2}
+  - {fileID: 11400000, guid: 977a63b6bdaac1d4caa89abf4a887ab1, type: 2}
+  walkable: 0
+  walkingSpeed: 0
