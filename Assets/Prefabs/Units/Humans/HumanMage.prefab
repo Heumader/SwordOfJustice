@@ -616,6 +616,8 @@ GameObject:
   - component: {fileID: 1488813490061426290}
   - component: {fileID: 7656047636466572009}
   - component: {fileID: 6154071000495004168}
+  - component: {fileID: 5913363047016287935}
+  - component: {fileID: 7602959905432271930}
   m_Layer: 0
   m_Name: HumanMage
   m_TagString: Untagged
@@ -940,6 +942,34 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 1}
   m_Size: {x: 2, y: 2.5}
   m_Direction: 0
+--- !u!114 &5913363047016287935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135869105809027920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4128f5675e84be43a3541b7cb1ea97d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7602959905432271930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135869105809027920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25868e9adbb55514bab7bd9755b7c690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Character: {fileID: 5421078833125869758}
+  FirearmFx: {fileID: 0}
+  InitDirection: 1
+  MovementSpeed: 0
 --- !u!1 &165186373999472958
 GameObject:
   m_ObjectHideFlags: 0

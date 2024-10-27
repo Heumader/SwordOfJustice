@@ -9,6 +9,8 @@ namespace Assets.HeroEditor4D.Common.Scripts.ExampleScripts
     {
         public Character4D Character;
 
+        public UnitManager UnitManager;
+
         public void Start()
         {
             var firearm = Character.SpriteCollection.Firearm2H.Single(i => i.Name == "MP5L");

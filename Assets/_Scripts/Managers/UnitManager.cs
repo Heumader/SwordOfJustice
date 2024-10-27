@@ -1,3 +1,5 @@
+using Assets.HeroEditor4D.Common.Scripts.Enums;
+using Assets.HeroEditor4D.Common.Scripts.ExampleScripts;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,13 +20,16 @@ public class UnitManager : MonoBehaviour
     public void spawnHeroes()
     {
 
-        var humanCount = 1;
+        var humanCount = 4;
 
         for(int i= 0; i < humanCount; i++)
         {
             var randomPrefab = GetRandomUnit<BaseHuman>(Faction.Human);
             var spawnedHuman = Instantiate(randomPrefab);
-            spawnedHuman.transform.position = new Vector3(0.5f, 0.3f, 0);
+
+            var a = spawnedHuman.GetComponent<ControlsExample>();
+            a.Character.AnimationManager.SetState(CharacterState.Run);
+            spawnedHuman.transform.position = new Vector3(0.5f+i-2, 0.3f-2, 0);
             spawnedHuman.transform.localScale = new Vector3(0.5f,0.5f,0.5f);
         }
 

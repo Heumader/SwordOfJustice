@@ -29,7 +29,9 @@ public class TilemapManager : MonoBehaviour
             }
         }
         
-        initMap();
+        var test = initMap();
+
+        var x = 0;
 
         
     }
@@ -39,18 +41,28 @@ public class TilemapManager : MonoBehaviour
         UnitManager.Instance.spawnHeroes();
     }
 
-    private void initMap()
+    private Dictionary<Vector2,Tile> initMap()
     {
-        var Size = groundMap.size;
+        Dictionary<Vector2, Tile> map = new Dictionary<Vector2, Tile>();
+       var Size = groundMap.size;
 
         for (int x = 0; x < groundMap.size.x; x++)
         {
             for (int y = 0; y < groundMap.size.y; y++)
             {
                 TileBase currentTile = getTileAt(x, y);
+                TileData data = null;
+                if (dataFromTiles.ContainsKey(currentTile))
+                {
+                    data = dataFromTiles[currentTile];
+                }
+                Tile tile = new Tile(null, data);
+
+                map[new Vector2(x, y)] = tile;
 
                 /*
-                var data = dataFromTiles[currentTile];
+                
+
                 if (data)
                 {
 
@@ -60,6 +72,12 @@ public class TilemapManager : MonoBehaviour
 
             }
         }
+
+
+        return map;
+    
+
+
     }
 
     private TileBase getTileAt(int x, int y)
